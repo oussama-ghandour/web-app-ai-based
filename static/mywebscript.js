@@ -9,6 +9,8 @@ let RunSentimentAnalysis = ()=>{
             document.getElementById("system_response").innerHTML = xhttp.responseText;
         }
     };
+    //initializes a request
     xhttp.open("GET", "sentimentAnalyzer?textToAnalyze"+"="+textToAnalyze, true);
+    //sends the request 
     xhttp.send();
 }
